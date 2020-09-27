@@ -4,7 +4,7 @@ import zooAnimales.*;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private List<Zona> zona;
+	private List<Zona> zonas;
 	
 	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
@@ -17,7 +17,7 @@ public class Zoologico {
 		return Animal.totalAnimales;
 	}
 	public void agregarZonas(Zona zona) {
-		this.zona.add(zona);
+		this.zonas.add(zona);
 	}
 	public String getNombre() {
 		return this.nombre;
@@ -31,11 +31,11 @@ public class Zoologico {
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
-	public List<Zona> getZona() {
-		return zona;
+	public List<Zona> getZonas() {
+		return zonas;
 	}
-	public void setZona(List<Zona> zonas) {
-		this.zona = zonas;
+	public void setZonas(List<Zona> zonas) {
+		this.zonas = zonas;
 	}
 	
 }
