@@ -32,13 +32,13 @@ public class Animal {
 		this.totalAnimales++;
 	}
 	
-	public void totalPorTipo() {
-		System.out.println("Mamiferos: "+ Mamifero.cantidadMamiferos());   
-		System.out.println("Aves: "+ Ave.cantidadAves());
-		System.out.println("Reptiles: "+ Reptil.cantidadReptiles());
-		System.out.println("Peces: "+Pez.cantidadPeces());
-		System.out.println("Anfibios: "+Anfibio.cantaidadAnfibios());
-		
+	public static String totalPorTipo() {
+		return " Mamiferos: " + Mamifero.cantidadMamiferos()+"\n" +
+		"Aves: "+ Ave.cantidadAves()+"\n"+
+		"Reptiles: "+Reptil.cantidadReptiles()+"\n" +
+		"Peces: "+Pez.cantidadPeces()+"\n"+
+		"Anfibios: "+ Anfibio.cantaidadAnfibios();
+	
 	}
 	public String movimiento() {
 		return "desplazarse";
