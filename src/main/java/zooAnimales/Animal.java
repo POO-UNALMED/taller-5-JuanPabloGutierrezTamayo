@@ -5,7 +5,7 @@ public class Animal {
 	public static int totalAnimales;
 	private String nombre;
 	private int edad;
-	private String habitad;
+	private String habitat;
 	private String genero;
 	private Zona zona;
 	
@@ -16,7 +16,7 @@ public class Animal {
 	public Animal(String nombre, int edad, String habitad, String genero, Zona zona) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.habitad = habitad;
+		this.habitat = habitad;
 		this.genero = genero;
 		this.zona = zona;	
 		this.totalAnimales++;
@@ -24,7 +24,7 @@ public class Animal {
 	public Animal(String nombre, int edad, String habitad, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.habitad = habitad;
+		this.habitat = habitad;
 		this.genero = genero;	
 		this.totalAnimales++;
 	}
@@ -42,11 +42,11 @@ public class Animal {
 	}
 	public String toString() {
 		if (this.zona==null) {
-			return "Mi nombres es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitad+
+			return "Mi nombres es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitat+
 					" y mi genero es "+this.genero;
 		}
 		else {
-			return "Mi nombres es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitad+
+			return "Mi nombres es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitat+
 					" y mi genero es "+this.genero+ " la zona en la que me ubico es "+ this.zona.getNombre()+
 					" en el zoo "+ this.zona.nombreZoo();
 		}

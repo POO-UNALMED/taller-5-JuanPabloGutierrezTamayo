@@ -8,8 +8,8 @@ public class Pez extends Animal {
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
-	public Pez(String nombre, int edad, String habitad, String genero, Zona zona, String colorEscamas, int cantidadAletas) {
-		super(nombre, edad, habitad, genero, zona);
+	public Pez(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int cantidadAletas) {
+		super(nombre, edad, habitat, genero, zona);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
 		listado.add(this);

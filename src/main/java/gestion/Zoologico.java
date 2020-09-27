@@ -6,10 +6,9 @@ public class Zoologico {
 	private String ubicacion;
 	private List<Zona> zonas;
 	
-	public Zoologico(String nombre, String ubicacion, List<Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
 	}
 	public Zoologico() {
 		

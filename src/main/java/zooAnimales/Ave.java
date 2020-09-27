@@ -12,8 +12,8 @@ public class Ave extends Animal {
 		listado.add(this);
 	}
 
-	public Ave(String nombre, int edad, String habitad, String genero, Zona zona, String colorPlumas) {
-		super(nombre, edad, habitad, genero, zona);
+	public Ave(String nombre, int edad, String habitat, String genero, Zona zona, String colorPlumas) {
+		super(nombre, edad, habitat, genero, zona);
 		this.colorPlumas = colorPlumas;
 		listado.add(this);
 		
@@ -22,7 +22,7 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	public static Ave crearAve(String nombre,int edad,String genero,Zona zona){
-		Ave ave=new Ave(nombre,edad,"montañas",genero,zona,"cafe glorioso");
+		Ave ave=new Ave(nombre,edad,"montanas",genero,zona,"cafe glorioso");
 		halcones++;
 		return ave;
 	}
