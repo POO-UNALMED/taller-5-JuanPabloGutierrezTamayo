@@ -3,7 +3,7 @@ import java.util.*;
 import gestion.*;
 
 public class Mamifero extends Animal {
-	private List<Mamifero>listado=new ArrayList<>();
+	private  static List<Mamifero>listado=new ArrayList<>();
 	static public int caballos;
 	static public int leones;
 	private boolean pelaje;
@@ -49,7 +49,7 @@ public class Mamifero extends Animal {
 		return leon;
 	}
 	public static int cantidadMamiferos() {
-		return caballos+leones;
+		return listado.size();
 	}
 	public List<Mamifero> getListado() {
 		return listado;

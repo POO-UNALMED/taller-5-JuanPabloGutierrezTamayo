@@ -3,7 +3,7 @@ import java.util.*;
 import gestion.*;
 
 public class Ave extends Animal {
-	private List<Ave> listado=new ArrayList<>();
+	private static List<Ave> listado=new ArrayList<>();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -48,7 +48,7 @@ public class Ave extends Animal {
 		return ave;
 	}
 	public static int cantidadAves() {
-		return halcones+aguilas;
+		return listado.size();
 	}
 
 	public List<Ave> getListado() {
