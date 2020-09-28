@@ -3,7 +3,7 @@ import java.util.*;
 import gestion.*;
 
 public class Mamifero extends Animal {
-	private List<Mamifero>listado;
+	private List<Mamifero>listado=new ArrayList<>();
 	static public int caballos;
 	static public int leones;
 	private boolean pelaje;
@@ -40,12 +40,12 @@ public class Mamifero extends Animal {
 	}
 	public static Mamifero crearLeon(String nombre,int edad,String genero,Zona zona){
 		Mamifero leon=new Mamifero(nombre,edad,"selva",genero,zona,true,4);
-		caballos++;
+		leones++;
 		return leon;
 	}
 	public static Mamifero crearLeon(String nombre,int edad,String genero){
 		Mamifero leon=new Mamifero(nombre,edad,"selva",genero,true,4);
-		caballos++;
+		leones++;
 		return leon;
 	}
 	public static int cantidadMamiferos() {
